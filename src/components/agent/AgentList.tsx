@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 
-export default function Sidebar() {
+export default function AgentList() {
   return (
     <Fragment>
-      <h3>This is a sidebar</h3>
+      <h2>List of Agents</h2>
     </Fragment>
   );
 }

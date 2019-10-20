@@ -1,0 +1,21 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.app-nav {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 1rem;
+  min-width: 30%;
+}
+
+.app-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

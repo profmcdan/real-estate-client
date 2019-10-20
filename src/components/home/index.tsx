@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 export default function index() {
-  return <div></div>;
+  return (
+    <Fragment>
+      <h2>Landing Page</h2>
+    </Fragment>
+  );
 }
