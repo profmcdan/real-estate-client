@@ -7,10 +7,10 @@ import { Store } from './configureStore';
 
 const App: React.FC = () => {
   const { state, dispatch } = React.useContext(Store);
+
   return (
     <Router>
       <Fragment>
-        {console.log(state)}
         <Header />
 
         <Switch>
