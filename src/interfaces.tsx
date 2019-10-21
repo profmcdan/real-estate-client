@@ -1,11 +1,7 @@
 export interface IState {
-  auth: {
-    username: string;
-    email: string;
-    role: string;
-    loggedIn: boolean;
-  };
+  auth: IAuth;
   movies?: Array<IMovie>;
+  movie?: IMovie;
 }
 
 export interface IAction {
@@ -13,6 +9,12 @@ export interface IAction {
   payload: any;
 }
 
+export interface IAuth {
+  username: string;
+  email: string;
+  role: string;
+  loggedIn: boolean;
+}
 export interface IAdvertProps {
   title: string;
   description: string;
@@ -40,4 +42,8 @@ export interface IMovie {
       href: string;
     };
   };
+}
+
+export interface ILoginProps {
+  login: (username: string, password: string) => IAction;
 }

@@ -11,6 +11,7 @@ import {
   Row,
   Col,
   CardHeader,
+  CardLink,
 } from 'reactstrap';
 import { IMovie } from '../../interfaces';
 import { Store } from '../../configureStore';
@@ -34,7 +35,7 @@ const MovieCard = (props: IMovie) => {
         <CardText>{summary.replace(regex, '')}</CardText>
         <CardText>
           <small className="text-muted">
-            <Link to={url}>More</Link>
+            <Link to={`/movie/${id}`}>More</Link>
           </small>
         </CardText>
       </CardBody>

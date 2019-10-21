@@ -1,5 +1,11 @@
 import { IState, IAction } from '../interfaces';
-import { REGISTER, LOGIN, LOGOUT, GET_MOVIES } from '../actions/actionTypes';
+import {
+  REGISTER,
+  LOGIN,
+  LOGOUT,
+  GET_MOVIES,
+  GET_A_MOVIE,
+} from '../actions/actionTypes';
 
 export const reducer = (state: IState, action: IAction): IState => {
   switch (action.type) {
@@ -11,6 +17,8 @@ export const reducer = (state: IState, action: IAction): IState => {
       return { ...state, auth: action.payload };
     case GET_MOVIES:
       return { ...state, movies: action.payload };
+    case GET_A_MOVIE:
+      return { ...state, movie: action.payload };
     default:
       return state;
   }

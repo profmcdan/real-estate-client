@@ -15,6 +15,8 @@ import AddApartment from './components/apartment/AddApartment';
 import AgentList from './components/agent/AgentList';
 import Land from './components/land';
 import Movies from './components/movies/MovieList';
+import Movie from './components/movies/Movie';
+
 // const Movies = React.lazy(() => import('./components/movies/MovieList'));
 
 const App: React.FC = () => {
@@ -22,10 +24,12 @@ const App: React.FC = () => {
   return (
     <Router>
       <Fragment>
+        {console.log(state)}
         <Container>
           <Header />
           <Switch>
             <Route exact path="/" component={Movies} />
+            <Route exact path="/movie/:movieId" component={Movie} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/apartments" component={ApartmentList} />
