@@ -37,10 +37,13 @@ export default function Header() {
   return (
     <Fragment>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">GY-HOMES</NavbarBrand>
+        <NavbarBrand href="/">MOMES</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
+            <NavItem>
+              <NavLink href="/">Movies</NavLink>
+            </NavItem>
             <NavItem>
               <NavLink href="/apartments">Apartments</NavLink>
             </NavItem>
